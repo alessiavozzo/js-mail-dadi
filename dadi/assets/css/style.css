@@ -1,0 +1,19 @@
+.btn-play{
+    background-color: lightcoral;
+    border: 3px solid red;
+    color: white;
+
+    &:hover{
+        background-color: aqua;
+        border: 3px solid blue;
+    }
+}
+
+.number-left, .number-right{
+    border-radius: 30px;
+    border: 2px solid lightcoral;
+}
+
+h1{
+    font-size: 3rem;
+}

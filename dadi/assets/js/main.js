@@ -2,20 +2,51 @@
 
 const maxNumber = 6
 
-const userNumber = Math.floor(Math.random() * maxNumber) + 1;
-console.log(userNumber);
 
-const computerNumber = Math.floor(Math.random() * maxNumber) + 1;
-console.log(computerNumber);
+const h1Element = document.querySelector("h1");
 
-if(userNumber > computerNumber){
-    console.log("Hai vinto!");
-}
+const btnPlay = document.querySelector(".btn-play")
 
-else if (userNumber < computerNumber){
-    console.log("Ha vinto il computer");
-}
+const userDice = document.querySelector(".number-left")
 
-else if (userNumber === computerNumber){
-    console.log("Pareggio");
-}
+const computerDice = document.querySelector(".number-right")
+
+
+
+btnPlay.addEventListener("click", function(){
+    
+    const userNumber = Math.floor(Math.random() * maxNumber) + 1;
+    //console.log(userNumber);
+    
+    const computerNumber = Math.floor(Math.random() * maxNumber) + 1;
+    //console.log(computerNumber);
+    
+    userDice.innerHTML = userNumber
+    computerDice.innerHTML = computerNumber
+
+    let winner;
+
+    if(userNumber > computerNumber){
+        winner = "You win!"
+        userDice.style.color = "green"
+        computerDice.style.color = "black"
+    }
+    
+    else if (userNumber < computerNumber){
+        winner = "Loser..."
+        computerDice.style.color = "green"
+        userDice.style.color = "black"
+    }
+    
+    else if (userNumber === computerNumber){
+        winner = "It's a tie...loser"
+    }
+
+    h1Element.innerHTML = winner
+
+})
+
+
+
+
+
