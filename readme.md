@@ -41,4 +41,8 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
         - Restituire messaggio "hai vinto"
     - SE numero computer > numero utente:
         - Restituire messaggio "ha vinto il computer"
-        
+### Tools dadi
+- console log
+- math random()
+- math floor/ceil ()
+- if/else
