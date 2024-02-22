@@ -1,9 +1,8 @@
 // mail ex
 
-const userEmail = prompt("Inserisci la tua email");
-
 const emailList = ["a.vozzo95@gmail.com", "alessia2@gmail.com","funziono@funziono.com"];
 
+const userEmail = prompt("Inserisci la tua email");
 let access = false;
 
 for (let i = 0; i < emailList.length; i++) {
@@ -13,4 +12,13 @@ for (let i = 0; i < emailList.length; i++) {
     
 }
 
-console.log(access);
+//console.log(access);
+
+if(access === true){
+    console.log("You can access");
+}
+
+else{
+    console.log("You shall not pass");
+}
+
